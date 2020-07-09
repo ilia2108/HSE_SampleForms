@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SampleForms.MainPage"
+             Title="Welcome to HSE">
+
+    <StackLayout Orientation="Vertical"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand"
+                 WidthRequest="300">
+        <!-- Place new controls here -->
+        <Label Text="Login"
+               Margin="0, 10, 0, 5"
+               />
+        <Entry x:Name="LoginText" Margin="0, 5, 0, 10"/>
+        <Label Text="Password"
+               Margin="0, 10, 0, 5"/>
+        <Entry x:Name="PasswordText" IsPassword="True" Margin="0, 5, 0, 5"/>
+
+        <Button Text="Login" Clicked="OnLogin"/>
+
+    </StackLayout>
+
+</ContentPage>
